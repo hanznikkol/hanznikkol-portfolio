@@ -1,1 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-bebas-neue: "Bebas Neue", sans-serif;
+  --font-source-sans: "Source Sans 3", sans-serif;
+  --font-source-code: "Source Code Pro", monospace;
+  /* Background */
+  --color-midnight-black: #0F0F0F;
+  --color-deep-charcoal: #2C2F3D;
+  /* CTA */
+  --color-crimson-red: #9F0E0E;
+  --color-mystic-purple: #4E3B6E;
+
+  /* Highlight */
+  --color-infernal-gold: #C89F3D;
+  --color-spectral-white: #F0F0F0;
+}
