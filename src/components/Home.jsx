@@ -6,7 +6,7 @@ import Crosshair from '../assets/images/Home/Crosshair.png'
 function Home() {
   return (
     <>
-    <div className="h-screen relative w-full flex bg-midnight-black z-10 overflow-hidden">
+    <div id='home' className="h-screen relative w-full flex bg-midnight-black z-10 overflow-hidden">
         {/*Content*/}
         <div className="flex items-center justify-center w-full h-full p-24">
             <div className='w-full h-full flex flex-col items-center justify-around p-8 gap-24'>
@@ -33,7 +33,6 @@ function Home() {
         <div className='absolute overflow-hidden right-0 top-48 transform translate-x-32'>
             <img src={TwoSquare}/>
         </div>
-
         <img src={Crosshair} className='absolute top-64 left-72'/>
         <img src={Crosshair} className='absolute bottom-56 right-64'/>
     </div>
