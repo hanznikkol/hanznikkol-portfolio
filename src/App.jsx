@@ -1,19 +1,16 @@
 import Home from "./components/Home"
 import Header from "./components/Header"
 import About from "./components/About"
+import Skills from "./components/Skills"
 function App() {
   
   return (
     <>
       <Header />
-      <div className="xl:snap-y lg:snap-mandatory lg:overflow-y-scroll flex flex-col scroll-smooth w-full h-screen font-source-sans text-spectral-white">
-        <div className="xl:snap-always xl:snap-center">
+      <div className=" flex flex-col scroll-smooth w-full min-h-screen font-source-sans text-spectral-white">
           <Home/>
-        </div>
-        <div className="xl:snap-always xl:snap-center">
           <About/>
-        </div>
-
+          <Skills/>
       </div>
 
       {/*Scroll*/}

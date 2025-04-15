@@ -12,14 +12,21 @@ html {
   --font-bebas-neue: "Bebas Neue", sans-serif;
   --font-source-sans: "Source Sans 3", sans-serif;
   --font-source-code: "Source Code Pro", monospace;
+
   /* Background */
   --color-midnight-black: #0F0F0F;
-  --color-deep-charcoal: #2C2F3D;
-  /* CTA */
-  --color-crimson-red: #9F0E0E;
+  
+  /* Main Text */
+  --color-spectral-white: #F0F0F0;
+
+  /* Accent */
   --color-mystic-purple: #4E3B6E;
 
-  /* Highlight */
-  --color-infernal-gold: #C89F3D;
-  --color-spectral-white: #F0F0F0;
+  /* Buttons and Highlights */
+  --color-golden-amber: #FFB84C;
+  --color-slate-blue: #6A7F9B;
+  --color-deep-coral: #E35B5B;
+
+  /* Subtle Accents */
+  --color-soft-lavender: #C2A7D7;
 }
