@@ -1,6 +1,6 @@
 function Skills() {
   return (
-    <div className="h-screen bg-midnight-black">Skills</div>
+    <div className="h-screen w-full justify-center items-center flex bg-midnight-black">Skills</div>
   )
 }
 

@@ -15,7 +15,7 @@ html {
 
   /* Background */
   --color-midnight-black: #0F0F0F;
-  
+  --color-deep-charcoal: #2C2F3D;
   /* Main Text */
   --color-spectral-white: #F0F0F0;
 
@@ -23,10 +23,8 @@ html {
   --color-mystic-purple: #4E3B6E;
 
   /* Buttons and Highlights */
-  --color-golden-amber: #FFB84C;
-  --color-slate-blue: #6A7F9B;
-  --color-deep-coral: #E35B5B;
+  --color-button-primary: #6F42C1; /* Electric Indigo */
+  --color-button-hover: #C084FC;   /* Luminous Lilac */
+  --color-highlight: #00A9E0; /* Luminous Lilac or something like #3ABFF8 (Opal Blue) */
 
-  /* Subtle Accents */
-  --color-soft-lavender: #C2A7D7;
 }

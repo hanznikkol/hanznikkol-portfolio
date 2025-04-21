@@ -9,7 +9,7 @@ function NavigationMenu({ isOpen }) {
                 <li className="hover:cursor-pointer hover:scale-105 duration-300 hover:text-mystic-purple"><a>ABOUT</a></li>
                 <li className="hover:cursor-pointer hover:scale-105 duration-300 hover:text-mystic-purple"><a>SKILLS</a></li>
                 <li className="hover:cursor-pointer hover:scale-105 duration-300 hover:text-mystic-purple"><a>WORKS</a></li>
-                <li className="hover:cursor-pointer hover:scale-105 duration-300 hover:text-mystic-purple"><a>CONTACTS</a></li>
+                <li className="hover:cursor-pointer hover:scale-105 duration-300 hover:text-mystic-purple"><a>CONTACT</a></li>
             </ul>
         </div>
     </div>

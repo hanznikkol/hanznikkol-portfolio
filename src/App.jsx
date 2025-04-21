@@ -2,15 +2,19 @@ import Home from "./components/Home"
 import Header from "./components/Header"
 import About from "./components/About"
 import Skills from "./components/Skills"
+import Works from "./components/Works"
+import Contact from "./components/Contact"
 function App() {
   
   return (
     <>
       <Header />
-      <div className=" flex flex-col scroll-smooth w-full min-h-screen font-source-sans text-spectral-white">
+      <div className=" flex flex-col scroll-smooth w-full min-h-screen font-source-sans text-spectral-white bg-midnight-black">
           <Home/>
           <About/>
           <Skills/>
+          <Works/>
+          <Contact/>
       </div>
 
       {/*Scroll*/}

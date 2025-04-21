@@ -53,11 +53,11 @@ function Home() {
                         </h1>
                         <div className="max-w-xl px-6">
                             <p className="text-center text-base lg:text-xl text-spectral-white">
-                                Passionate <strong className="text-deep-coral">Front-End Developer</strong> crafting intuitive web and mobile experiences.
+                                Passionate <strong className="text-highlight">Front-End Developer</strong> crafting intuitive web and mobile experiences.
                             </p>
                         </div>
 
-                        <a className="hover:cursor-pointer hover:scale-105 relative font-bold mt-4 bg-golden-amber px-6 lg:px-10 py-2 lg:py-3 text-spectral-white rounded-lg text-sm lg:text-lg overflow-hidden transition-all duration-300 before:absolute before:inset-0 before:scale-x-0 before:bg-mystic-purple before:origin-left before:transition-transform before:duration-300 hover:before:scale-x-100">
+                        <a className="hover:cursor-pointer hover:scale-105 relative font-bold mt-4 bg-button-primary px-6 lg:px-10 py-2 lg:py-3 text-spectral-white rounded-lg text-sm lg:text-lg overflow-hidden transition-all duration-300 before:absolute before:inset-0 before:scale-x-0 before:bg-button-hover before:origin-left before:transition-transform before:duration-300 hover:before:scale-x-100">
                             <span className="relative z-10">Contact Me</span>
                         </a>
                     </div>
