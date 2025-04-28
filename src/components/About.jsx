@@ -37,7 +37,7 @@ function About() {
             </div>
 
             <div className="flex-1 flex flex-col w-full h-full items-center xl:items-end justify-start xl:justify-center p-8 xl:p-0 gap-10 z-20 ">
-              <h1 className=" text-center xl:text-right text-6xl xl:text-9xl font-bebas-neue text-spectral-white">ABOUT <span className="text-mystic-purple">ME</span></h1>
+              <h1 className=" text-center xl:text-right text-6xl lg:text-7xl xl:text-9xl font-bebas-neue text-spectral-white">ABOUT <span className="text-mystic-purple">ME</span></h1>
               <div className="flex flex-col text-center xl:text-right font-source-sans xl:text-xl text-spectral-white pl-4 text-balance gap-10">
                 <p className=" ">I'm a soon-to-be BSIT graduate at STI College Lucena and <strong className="text-highlight">Front-End Development enthusiast</strong> passionate about crafting user-friendly and visually appealing web experiences. I enjoy turning designs into clean, responsive interfaces and constantly learning new technologies to improve my skills.</p>
                 <p>Beyond coding, I'm deeply into <strong className="text-highlight">music</strong>. I play bass and guitar, sing, and write songs. Music fuels my creativity, much like web development. I'm also a gamer, which inspires my interest in interactive digital experiences.</p>
@@ -48,7 +48,7 @@ function About() {
 
         {/*Decorations*/}
         {/*Crosshair*/}
-        <img src={Crosshair} className='absolute hidden xl:block top-40 right-80 m-0 p-0 transform -translate-x-96 '/>
+        <img src={Crosshair} className='absolute hidden xl:block top-40 right-40 m-0 p-0 transform -translate-x-96 '/>
         <img src={Crosshair} className='absolute right-6 bottom-40 xl:right-12 lg:right-64'/>
         <img src={Crosshair} className='absolute bottom-20 left-6 xl:left-12 lg:left-64'/>
     </div>
