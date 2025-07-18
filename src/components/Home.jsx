@@ -14,23 +14,35 @@ function Home() {
     const fullText = "Hanz Nikkol.";
 
     useEffect(() => {
-        gsap.to(cursorRef.current, {
-            opacity: 0,
-            repeat: -1,
-            yoyo: true,
-            duration: 0.6,
-            ease: "power1.inOut"
-        });
+        const animate = () => {
+            gsap.killTweensOf([cursorRef.current, textRef.current])
 
-        gsap.to(textRef.current, {
-            text: fullText,
-            duration: fullText.length * 0.1,
-            ease: 'none'
-        });
+            gsap.to(cursorRef.current, {
+                opacity: 0,
+                repeat: -1, 
+                yoyo: true,
+                duration: 0.6,
+                ease: "power1.inOut"
+            });
+
+            gsap.fromTo(textRef.current, 
+                { text: "" },
+                {
+                    text: fullText,
+                    duration: fullText.length * 0.1,
+                    ease: 'none'
+                }
+            );
+        }
+
+        animate(); // initial run
+        const interval = setInterval(animate, 10000);
+        return () => clearInterval(interval); // cleanup
+        
     }, []);
 
     return (
-        <div id='home' className="relative w-full h-screen flex items-center justify-center bg-midnight-black overflow-hidden z-20">
+        <div id='home' className="relative w-full h-screen flex items-center justify-center bg-midnight-black overflow-hidden z-20 select-none">
 
             {/* Content */}
             <div className="flex justify-center items-center w-full h-full px-4 lg:px-16">
@@ -53,13 +65,18 @@ function Home() {
                         </h1>
                         <div className="max-w-xl px-6">
                             <p className="text-center text-base lg:text-xl text-spectral-white">
-                                Passionate <strong className="text-highlight">Front-End Developer</strong> crafting intuitive web and mobile experiences.
+                                <strong className="text-highlight">Front-End driven.</strong> <strong className="text-violet-400">Full-Stack capable.</strong> Passionate about building sleek, fast, and user-first digital experiences.
                             </p>
                         </div>
-
-                        <a className="hover:cursor-pointer hover:scale-105 relative font-bold mt-4 bg-button-primary px-6 lg:px-10 py-2 lg:py-3 text-spectral-white rounded-lg text-sm lg:text-lg overflow-hidden transition-all duration-300 before:absolute before:inset-0 before:scale-x-0 before:bg-button-hover before:origin-left before:transition-transform before:duration-300 hover:before:scale-x-100">
-                            <span className="relative z-10">Contact Me</span>
-                        </a>
+                        {/* Buttons */}
+                        <div className='flex gap-4 items-center'>
+                            <a href='#contacts' className="hover:cursor-pointer hover:scale-105 relative font-bold mt-4 bg-button-primary py-2 px-4 text-spectral-white rounded-lg text-sm lg:text-lg overflow-hidden transition-all duration-300 hover:bg-button-hover">
+                                <span className="relative z-10">Contact Me</span>
+                            </a>
+                            <a href='#projects' className="hover:cursor-pointer hover:scale-105 relative font-bold mt-4 border py-2 px-4  rounded-lg text-sm lg:text-lg overflow-hidden transition-all duration-300 border-spectral-white text-spectral-white hover:bg-spectral-white hover:text-midnight-black">
+                                <span className="relative z-10">View Projects</span>
+                            </a>
+                        </div>  
                     </div>
 
                 </div>
@@ -70,7 +87,7 @@ function Home() {
             </div>
 
             {/* Two Square - top right, floated outside */}
-            <div className="absolute w-64 h-64 lg:w-80 lg:h-80 -right-16 top-20 lg:top-32">
+            <div className="absolute w-64 h-64 lg:w-80 lg:h-80 -right-32 top-24 lg:top-32">
                 <img src={TwoSquare} className="w-full h-full object-cover" />
             </div>
 
