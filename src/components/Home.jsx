@@ -56,7 +56,7 @@ function Home() {
                     {/* Text Block */}
                     <div className="flex flex-col justify-center items-center gap-4 lg:gap-6">
                         <p className="text-lg lg:text-2xl text-spectral-white">Hello I&apos;m</p>
-                        <h1 className="text-center tracking-wider font-bebas-neue font-bold text-6xl lg:text-8xl">
+                        <h1 className="text-center tracking-wider font-bebas-neue font-bold text-5xl md:text-6xl lg:text-8xl">
                             <span className="text-mystic-purple">&gt;</span>
                             <span className="inline-flex">
                                 <span ref={textRef} className="text-spectral-white"></span>
@@ -64,7 +64,7 @@ function Home() {
                             </span>
                         </h1>
                         <div className="max-w-xl px-6">
-                            <p className="text-center text-base lg:text-xl text-spectral-white">
+                            <p className="text-center text-sm lg:text-xl text-spectral-white">
                                 <strong className="text-highlight">Front-End driven.</strong> <strong className="text-violet-400">Full-Stack capable.</strong> Passionate about building sleek, fast, and user-first digital experiences.
                             </p>
                         </div>

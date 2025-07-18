@@ -33,7 +33,7 @@ function ContactForm() {
     })
   }
   return (
-    <Card className={'w-full bg-white/10 backdrop-blur-md border border-white/20 text-white shadow-lg rounded-2xl'}>
+    <Card className={'w-full bg-white/10 backdrop-blur-md border border-white/20 text-white shadow-lg rounded-2xl overflow-y-auto'}>
       <CardHeader>
         <CardTitle className={'font-bold text-2xl'}>Send a Message</CardTitle>
         <CardDescription className="text-sm text-muted-foreground">

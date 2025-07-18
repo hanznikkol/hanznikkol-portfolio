@@ -57,7 +57,7 @@ function Works() {
   ]
   return (
     <>
-    <div id='projects' className="flex flex-col w-full h-screen py-4 lg:py-6">
+    <div id='projects' className="flex flex-col w-full min-h-screen lg:h-screen py-4 lg:py-6">
       <Swiper
         modules={[Navigation, Autoplay]}
         autoplay={{
@@ -66,7 +66,7 @@ function Works() {
         }}
         loopFillGroupWithBlank={true}  
         loop={true}
-        className = "w-full h-screen"
+        className = "w-full h-full overflow-y-auto"
         slidesPerView={1}
       >
         {projects.map((project, index) => (
@@ -89,7 +89,7 @@ function Works() {
                       </Badge>
                     ))}
                   </div>
-                  <p className='mt-4 text-lg'>{project.desc}</p>
+                  <p className='mt-4 text-sm lg:text-lg'>{project.desc}</p>
                   
                   <div className='flex gap-2 items-center'>
                     {project.repoLink && (

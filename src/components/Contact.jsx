@@ -3,7 +3,7 @@ import ContactForm from "./subcomponents/ContactForm";
 
 function Contact() {
   return (
-    <div id="contacts" className="h-screen w-full flex flex-col p-6 lg:flex-row bg-midnight-black lg:p-24 gap-6 lg:gap-2">
+    <div id="contacts" className="min-h-screen lg:h-screen w-full flex flex-col p-6 lg:flex-row bg-midnight-black lg:p-24 gap-6 lg:gap-2">
       <div className="w-full h-full flex-1 flex flex-col justify-center items-center lg:items-start px-8 text-spectral-white">
         <h1 className="text-4xl lg:text-7xl font-bold mb-4">Contact Me</h1>
         <p className="mb-2">📍 Lucena City, Philippines</p>
