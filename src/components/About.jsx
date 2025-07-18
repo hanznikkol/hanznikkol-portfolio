@@ -6,7 +6,6 @@ import Image1 from '../assets/images/About//Swiper_Images/Image1.jpg'
 import Image2 from '../assets/images/About/Swiper_Images/Image2.jpg'
 import Image3 from '../assets/images/About/Swiper_Images/Image3.jpg'
 import Image4 from '../assets/images/About/Swiper_Images/Image4.jpg'
-import Image5 from '../assets/images/About/Swiper_Images/Image5.jpg'
 import Crosshair from '../assets/images/Home/Crosshair.png'
 
 function About() {
@@ -27,7 +26,7 @@ function About() {
                     disableOnInteraction: false,
                   }}
                 >
-                  {[Image1, Image2, Image3, Image4, Image5].map((image, index) => (
+                  {[Image1, Image2, Image3, Image4].map((image, index) => (
                       <SwiperSlide key={index} className='w-full h-full object-cover'>
                         <img src={image} alt={'Slide ${index + 1}'} className='w-full h-full object-cover block'/>
                       </SwiperSlide>
