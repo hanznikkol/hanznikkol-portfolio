@@ -71,9 +71,9 @@ function Works() {
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index}>
-            <div className='flex lg:items-center flex-col xl:flex-row w-full h-screen lg:gap-2 p-8 lg:py-4 lg:pr-24 cursor-grab grab-active'>
+            <div className='flex lg:items-center flex-col lg:flex-row w-full h-screen lg:gap-2 p-8 lg:py-4 lg:pr-24 cursor-grab grab-active'>
               {/* Mockup Images */}
-              <div className='w-full lg:w-[60%] lg:h-[75%]'>
+              <div className='w-full lg:w-[60%] lg:h-[55%] xl:w-[60%] xl:h-[70%]'>
                 <img src={project.mockup} alt='' className='w-full h-full'/> 
               </div>
 
@@ -89,7 +89,7 @@ function Works() {
                       </Badge>
                     ))}
                   </div>
-                  <p className='mt-4 text-sm lg:text-lg'>{project.desc}</p>
+                  <p className='mt-4 text-sm lg:text-base xl:text-lg'>{project.desc}</p>
                   
                   <div className='flex gap-2 items-center'>
                     {project.repoLink && (

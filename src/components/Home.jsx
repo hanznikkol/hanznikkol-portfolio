@@ -46,17 +46,17 @@ function Home() {
 
             {/* Content */}
             <div className="flex justify-center items-center w-full h-full px-4 lg:px-16">
-                <div className="w-full max-w-2xl h-fit flex flex-col items-center justify-center gap-12 xl:gap-20 lg:px-8">
+                <div className="w-full max-w-2xl h-fit flex flex-col items-center justify-center gap-12 2xl:gap-16 lg:px-8">
 
                     {/* Profile Image */}
-                    <div className="w-40 h-40 lg:w-64 lg:h-64 z-20">
+                    <div className="w-40 h-40 lg:w-48 lg:h-48 xl:w-60 xl:h-60 2xl:w-64 2xl:h-64 z-20">
                         <img src={mePhoto} className="w-full h-full object-cover" />
                     </div>
 
                     {/* Text Block */}
-                    <div className="flex flex-col justify-center items-center gap-4 lg:gap-6">
-                        <p className="text-lg lg:text-2xl text-spectral-white">Hello I&apos;m</p>
-                        <h1 className="text-center tracking-wider font-bebas-neue font-bold text-5xl md:text-6xl lg:text-8xl">
+                    <div className="flex flex-col justify-center items-center gap-4">
+                        <p className="text-sm lg:text-lg xl:text-xl text-spectral-white">Hello I&apos;m</p>
+                        <h1 className="text-center tracking-wider font-bebas-neue font-bold text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
                             <span className="text-mystic-purple">&gt;</span>
                             <span className="inline-flex">
                                 <span ref={textRef} className="text-spectral-white"></span>
@@ -64,7 +64,7 @@ function Home() {
                             </span>
                         </h1>
                         <div className="max-w-xl px-6">
-                            <p className="text-center text-sm lg:text-xl text-spectral-white">
+                            <p className="text-center text-sm lg:text-lg xl:text-xl text-spectral-white">
                                 <strong className="text-highlight">Front-End driven.</strong> <strong className="text-violet-400">Full-Stack capable.</strong> Passionate about building sleek, fast, and user-first digital experiences.
                             </p>
                         </div>
