@@ -11,9 +11,9 @@ function App() {
       <Header />
       <div className=" flex flex-col scroll-smooth w-full min-h-screen font-source-sans text-spectral-white bg-midnight-black">
           <Home/>
-          <About/>
-          <Skills />
           <Works/>
+          <Skills />
+          <About/>
           <Contact/>
       </div>
       <Toaster position="bottom-right" richColors/>

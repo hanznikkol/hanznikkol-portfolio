@@ -1,10 +1,11 @@
 import { FaDownload, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 import ContactForm from "./subcomponents/ContactForm";
-
+import TwoSquare from '../assets/images/Home/TwoSquare.png';
+import DotPattern from '../assets/images/Home/DotPatterns.png'
 function Contact() {
   return (
-    <div id="contacts" className="min-h-screen lg:h-screen w-full flex flex-col p-6 lg:flex-row bg-midnight-black lg:p-24 gap-6 lg:gap-2">
-      <div className="w-full h-full flex-1 flex flex-col justify-center items-center lg:items-start px-8 text-spectral-white">
+    <div id="contacts" className="relative overflow-hidden z-50 min-h-screen lg:h-screen w-full flex flex-col p-6 lg:flex-row bg-midnight-black  lg:p-24 gap-6 lg:gap-2">
+      <div className=" z-40 w-full h-full flex-1 flex flex-col justify-center items-center lg:items-start px-8 text-spectral-white">
         <h1 className="text-4xl lg:text-7xl font-bold mb-4">Contact Me</h1>
         <p className="mb-2">📍 Lucena City, Philippines</p>
         <p className="mb-2"><a></a>📧 hanznikkolmaas@gmail.com</p>

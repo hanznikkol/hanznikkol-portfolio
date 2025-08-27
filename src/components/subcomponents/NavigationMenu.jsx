@@ -7,8 +7,9 @@ function NavigationMenu({ isOpen, onClose }) {
         <ul className="text-spectral-white font-bebas-neue text-5xl lg:text-7xl space-y-16">
           {[
             { id: "home", label: "HOME" },
-            { id: "about", label: "ABOUT" },
             { id: "projects", label: "WORKS" },
+            { id: "skills", label: "Skills"},
+            { id: "about", label: "ABOUT" },
             { id: "contacts", label: "CONTACT" },
           ].map(({ id, label }) => (
             <li

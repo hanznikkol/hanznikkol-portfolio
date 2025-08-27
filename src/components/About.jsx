@@ -10,12 +10,15 @@ import Crosshair from '../assets/images/Home/Crosshair.png'
 
 function About() {
   return (
-    <div id="about" className="relative h-full w-full bg-midnight-black z-20 select-none">
-        <div className="flex flex-col xl:flex-row items-center justify-center w-full h-full lg:p-24 lg:gap-2">
+    <div id="about" className="relative min-h-screen w-full z-20 select-none">
+
+        <div className="flex flex-col xl:flex-row items-center justify-center w-full lg:h-full xl:h-screen p-2 lg:p-24 lg:gap-2 bg-red-300">
+
+            {/* Swiper Container */}
             <div className="flex-1 flex justify-center items-center w-full h-full relative p-8 lg:p-16 xl:p-0">
-              <div className='absolute transform hidden lg:block -translate-x-14 -translate-y-14 w-full h-full lg:w-[700px] lg:h-[500px] border opacity-50 border-spectral-white'></div>  
-              {/* Swiper Images */}
-              <Swiper  
+              {/* Decoration */}
+              <div className='absolute transform hidden lg:block -translate-x-14 -translate-y-14 w-full h-full lg:w-[700px] lg:h-[500px] border opacity-50 border-spectral-white'></div> 
+              <Swiper   
                   className='w-full h-[300px] lg:w-[700px] lg:h-[500px]'
                   slidesPerView={1}
                   modules={[EffectFade, Autoplay]}
@@ -50,7 +53,7 @@ function About() {
         {/*Crosshair*/}
         <img src={Crosshair} className='absolute hidden xl:block top-40 right-40 m-0 p-0 transform -translate-x-96 '/>
         <img src={Crosshair} className='absolute right-6 bottom-40 xl:right-12 lg:right-64'/>
-        <img src={Crosshair} className='absolute bottom-20 left-6 xl:left-12 lg:left-64'/>
+        <img src={Crosshair} className='absolute block lg:hidden bottom-12 left-2 xl:left-12 lg:left-64'/>
     </div>
 
   )

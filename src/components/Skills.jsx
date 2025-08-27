@@ -44,7 +44,7 @@ const skills = [
 
 function Skills() {
   return (
-    <div className="relative h-auto w-full justify-center items-center flex bg-midnight-black z-20 p-4 md:p-8 lg:px-14 lg:py-8  select-none">
+    <div id="skills" className="relative h-auto w-full justify-center items-center flex bg-midnight-black mt-0 lg:mt-12 z-20 py-16 px-2 lg:px-12 select-none">
       <div className="w-full h-full flex flex-col items-center gap-10">
         <h1 className=" text-center text-6xl lg:text-7xl font-bebas-neue text-spectral-white">SKILLS</h1>
 

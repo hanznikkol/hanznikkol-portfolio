@@ -57,7 +57,7 @@ function Works() {
   ]
   return (
     <>
-    <div id='projects' className="flex flex-col w-full min-h-screen lg:h-screen py-4 lg:py-6">
+    <div id='projects' className="flex flex-col w-full lg:h-screen">
       <Swiper
         modules={[Navigation, Autoplay]}
         autoplay={{
@@ -71,9 +71,9 @@ function Works() {
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index}>
-            <div className='flex lg:items-center flex-col lg:flex-row w-full h-screen lg:gap-2 p-8 lg:py-4 lg:pr-24 cursor-grab grab-active'>
+            <div className='flex lg:items-center justify-center flex-col lg:flex-row w-full lg:h-screen lg:gap-2 p-8 lg:py-4 lg:pr-24 cursor-grab grab-active'>
               {/* Mockup Images */}
-              <div className='w-full lg:w-[60%] lg:h-[55%] xl:w-[60%] xl:h-[70%]'>
+              <div className='w-full lg:w-[70%]'>
                 <img src={project.mockup} alt='' className='w-full h-full'/> 
               </div>
 
@@ -124,7 +124,7 @@ function Works() {
         ))}
       </Swiper>
 
-      <p className=" text-center text-sm text-spectral-white opacity-70">
+      <p className="hidden lg:block text-center text-sm text-spectral-white opacity-70">
         Swipe or drag to explore more →
       </p>
     </div>
