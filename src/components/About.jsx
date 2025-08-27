@@ -10,9 +10,9 @@ import Crosshair from '../assets/images/Home/Crosshair.png'
 
 function About() {
   return (
-    <div id="about" className="relative min-h-screen w-full z-20 select-none">
+    <div id="about" className="relative min-h-screen w-full z-20 select-none bg-midnight-black">
 
-        <div className="flex flex-col xl:flex-row items-center justify-center w-full lg:h-full xl:h-screen p-2 lg:p-24 lg:gap-2 bg-red-300">
+        <div className="flex flex-col xl:flex-row items-center justify-center w-full lg:h-full xl:h-screen p-2 lg:p-24 lg:gap-2 ">
 
             {/* Swiper Container */}
             <div className="flex-1 flex justify-center items-center w-full h-full relative p-8 lg:p-16 xl:p-0">
