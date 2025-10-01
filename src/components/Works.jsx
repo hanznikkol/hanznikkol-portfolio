@@ -4,10 +4,11 @@ import mockup2 from '../assets/images/Mockups/STIJoinMockup.png'
 import mockup3 from '../assets/images/Mockups/DoodleMockup.png'
 import { FaFigma, FaGithub } from 'react-icons/fa';
 import { Badge } from './ui/badge';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import "swiper/css/pagination";
 
 function Works() {
 
@@ -59,13 +60,14 @@ function Works() {
     <>
     <div id='projects' className="flex flex-col w-full lg:h-screen">
       <Swiper
-        modules={[Navigation, Autoplay]}
+        modules={[Pagination, Autoplay]}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
         }}
         loopFillGroupWithBlank={true}  
         loop={true}
+        pagination={{ clickable: true }}
         className = "w-full h-full overflow-y-auto"
         slidesPerView={1}
       >
