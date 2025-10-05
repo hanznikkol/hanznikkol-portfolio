@@ -14,32 +14,34 @@ function Home() {
     const fullText = "Hanz Nikkol.";
 
     useEffect(() => {
-        const animate = () => {
-            gsap.killTweensOf([cursorRef.current, textRef.current])
+    // make cursor blink forever, only once
+    gsap.to(cursorRef.current, {
+        opacity: 0,
+        repeat: -1,
+        yoyo: true,
+        duration: 0.6,
+        ease: "power1.inOut",
+    });
 
-            gsap.to(cursorRef.current, {
-                opacity: 0,
-                repeat: -1, 
-                yoyo: true,
-                duration: 0.6,
-                ease: "power1.inOut"
-            });
-
-            gsap.fromTo(textRef.current, 
-                { text: "" },
-                {
-                    text: fullText,
-                    duration: fullText.length * 0.1,
-                    ease: 'none'
-                }
-            );
+    // function that types the text
+    const typeText = () => {
+      gsap.fromTo(
+        textRef.current,
+        { text: "" },
+        {
+          text: fullText,
+          duration: fullText.length * 0.1,
+          ease: "none",
         }
+      );
+    };
 
-        animate(); // initial run
-        const interval = setInterval(animate, 10000);
-        return () => clearInterval(interval); // cleanup
-        
-    }, []);
+    // initial and repeated typing
+    typeText();
+    const interval = setInterval(typeText, 10000);
+
+    return () => clearInterval(interval);
+  }, []);
 
     return (
         <div id='home' className="relative w-full h-screen flex items-center justify-center bg-midnight-black overflow-hidden z-20 select-none">
