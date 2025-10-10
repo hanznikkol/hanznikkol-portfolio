@@ -1,4 +1,3 @@
-import React from 'react'
 import mockup1 from '../assets/images/Mockups/ONEFlowMockup.png'
 import mockup2 from '../assets/images/Mockups/STIJoinMockup.png'
 import mockup3 from '../assets/images/Mockups/DoodleMockup.png'
@@ -56,6 +55,7 @@ function Works() {
       figmaLink: 'https://www.figma.com/design/vKMO44zhZtiErRubi8vsp9/Dood.le?node-id=0-1&p=f&t=IQhDnACcVBI9MCJ1-0',
     }
   ]
+
   return (
     <>
     <div id='projects' className="flex flex-col w-full lg:h-screen">

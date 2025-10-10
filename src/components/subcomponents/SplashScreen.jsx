@@ -1,17 +1,18 @@
 import React from 'react'
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
+
 function SplashScreen() {
   return (
     <motion.div
-      initial={{ x: 0, opacity: 1, backgroundColor: "#0F0F0F"}}
-      animate={{ x: "100%", opacity: 1}} // only slide, no fade yet
+      initial={{ x: 0, opacity: 1, backgroundColor: "#0F0F0F" }}
+      animate={{ x: "100%", opacity: 1 }}
       transition={{
-        delay: 1.6, //  wait before sliding
-        duration: 1, // smoother slide
+        delay: 1.6, // wait before sliding
+        duration: 1,
         ease: [0.76, 0, 0.24, 1],
       }}
-      className="fixed inset-0 flex items-center justify-center bg-midnight-black text-spectral-white z-[9999]"
+      className="fixed inset-0 flex items-center justify-center bg-midnight-black text-spectral-white z-[9999] p-4"
     >
       <motion.h1
         initial={{ opacity: 0, scale: 0.9 }}
@@ -20,7 +21,7 @@ function SplashScreen() {
           duration: 0.8,
           ease: "easeOut",
         }}
-        className="text-8xl font-bold font-bebas-neue"
+        className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold font-bebas-neue text-center"
       >
         <span className="text-mystic-purple">&gt;</span>
         <span className="inline-flex">
