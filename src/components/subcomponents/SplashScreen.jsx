@@ -21,9 +21,9 @@ function SplashScreen() {
           duration: 0.8,
           ease: "easeOut",
         }}
-        className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold font-bebas-neue text-center"
+        className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold font-bebas-neue text-center select-none"
       >
-        <span className="text-mystic-purple">&gt;</span>
+        <span className="text-mystic-purple select-none">&gt;</span>
         <span className="inline-flex">
           <span className="text-spectral-white ml-2">Hanz Nikkol</span>
           <span className="text-mystic-purple ml-1 animate-pulse">_</span>
