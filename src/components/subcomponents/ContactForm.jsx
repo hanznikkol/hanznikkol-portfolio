@@ -28,6 +28,7 @@ function ContactForm() {
       formRef.current.reset()
     })
     .catch((error) => {
+      console.log(error)
       toast.error('Failed to send message. Please try again.')
       setLoading(false)
     })

@@ -13,10 +13,10 @@ function Header() {
     return (
     <>
         {/* Mobile */}
-        <nav className="flex items-center justify-between fixed top-0 w-full h-auto p-2 bg-midnight-black px-5 z-50 lg:hidden">
-            <div className='w-auto h-auto'>
+        <nav className="flex items-center justify-between fixed top-0 w-full h-auto bg-midnight-black px-6 py-2 z-50 lg:hidden">
+            <div className='w-auto h-14'>
                 <a href='#home'>
-                    <img src={Logo} alt='Logo' className=''/>
+                    <img src={Logo} alt='Logo' className='w-full h-full'/>
                 </a>
             </div>
             <Hamburger toggleMenu={toggleMenu} isOpen={isOpen}/>
