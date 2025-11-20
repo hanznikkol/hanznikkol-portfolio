@@ -8,7 +8,7 @@ function SplashScreen() {
       initial={{ x: 0, opacity: 1, backgroundColor: "#0F0F0F" }}
       animate={{ x: "100%", opacity: 1 }}
       transition={{
-        delay: 1.6, // wait before sliding
+        delay: 1.0, // wait before sliding
         duration: 1,
         ease: [0.76, 0, 0.24, 1],
       }}

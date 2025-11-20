@@ -12,7 +12,7 @@ function App() {
   const [showSplash, setShowSplash] = useState(true)
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowSplash(false), 2500); // 2.5s
+    const timer = setTimeout(() => setShowSplash(false), 1500); // 2.5s
     return () => clearTimeout(timer);
   }, [])
   return (
@@ -25,7 +25,7 @@ function App() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: showSplash ? 0 : 1 }}
-          transition={{ duration: 0.6, delay: 1.6 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
           className="flex flex-col scroll-smooth w-full min-h-screen font-source-sans text-spectral-white"
         >
           <Header />
