@@ -24,7 +24,7 @@ function Works() {
         VueJS: 'bg-green-700',
       },
       mockup: mockup1, // your imported image
-      repoLink: 'https://github.com/',
+      repoLink: 'https://github.com/hanznikkol/oneflow-admin',
       figmaLink: 'https://www.figma.com/design/If7gAiGoNhnNvYyWwZHkf3/Capstone-ONEFlow?node-id=0-1&t=MNVcsWYIyhfHVz1A-1',
     },
     {
